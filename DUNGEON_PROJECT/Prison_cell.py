@@ -1,8 +1,9 @@
 from colorama import Fore
 from time import sleep
+import mydata
+from Dog_room_crossroads import room2
 inventory = []
 def room1 ():
-    health = 100
     key = False
     look_at_the_bench = True
     look_at_the_crack = True
@@ -55,7 +56,7 @@ def room1 ():
         if player_input == "2":
             sleep(1)
             print(f"{Fore.YELLOW}Виждаш малка змия която скача и те ухапва/ - 20 кръв")
-            health -= 20
+            mydata.health -= 20
             look_at_the_crack = False
             sleep(1)
             n = input(f"{Fore.BLUE}Напиши (y) когато искаш да продължиш:")
@@ -80,16 +81,11 @@ def room1 ():
                     print(f"{Fore.RED}Невалиден избор")
             if key :
                 sleep(1)
-                print(f"Отиваш в другата стая")
                 key = False
                 Open_the_door = False
                 sleep(1)
-                n = input(f"{Fore.BLUE}Напиши (y) когато искаш да продължиш:")
-                if n == "y":
-                    continue
-                else:
-                    sleep(1)
-                    print(f"{Fore.RED}Невалиден избор")
+                room2()
+                break
 
         if player_input == "5":
             sleep(1)
@@ -106,6 +102,6 @@ def room1 ():
 
 
 
-
+room1()
 
 

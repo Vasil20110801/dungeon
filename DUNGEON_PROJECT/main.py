@@ -1,6 +1,9 @@
 from colorama import Fore
 from time import sleep
 from Prison_cell import  room1
+from Dog_room_crossroads import room2
+
+
 def situation_01():
     sleep(3)
     print(f"{Fore.YELLOW}Събуждаш се в тъмнина. Мирише на влага, метал и кръв. Чува се капене на вода и далечен метален шум, сякаш верига се влачи по камъка. Главата ти бучи. Не помниш нищо – нито как се озова тук, нито кой си.")

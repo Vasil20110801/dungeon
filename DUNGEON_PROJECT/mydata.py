@@ -1,0 +1,2 @@
+#pROMENLIVI
+health = 100
