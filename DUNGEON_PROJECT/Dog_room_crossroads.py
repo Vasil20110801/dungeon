@@ -1,6 +1,7 @@
 from colorama import Fore
 from time import sleep
 import mydata
+from gold_room import room3
 key1 = False
 def room2 ():
     sleep(3)
@@ -35,6 +36,9 @@ def room2 ():
         if attack:
             sleep(1)
             print(f"{Fore.GREEN}(3) == Ще се опитам да го нападна")
+        if key1:
+            sleep(1)
+            print("(4) == Поеми нa някаде по-кръстопътя")
         sleep(1)
         player_input = input(f"{Fore.BLUE}Въведете вашият избор: ")
         if player_input == "1":
@@ -72,3 +76,7 @@ def room2 ():
             else:
                 sleep(1)
                 print(f"{Fore.RED}Невалиден избор")
+        elif player_input == "4":
+            sleep(1)
+            room3()
+
