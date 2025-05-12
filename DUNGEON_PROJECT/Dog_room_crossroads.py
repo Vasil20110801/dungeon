@@ -2,8 +2,8 @@ from colorama import Fore
 from time import sleep
 import mydata
 from gold_room import room3
-key1 = False
 def room2 ():
+    key1 = False
     sleep(3)
     print(f"{Fore.YELLOW}Когато излизаш от килията, попадаш в тъмен коридор, който се разклонява на три посоки. ")
     sleep(3)
