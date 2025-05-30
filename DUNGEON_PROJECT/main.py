@@ -11,4 +11,5 @@ def situation_01():
     sleep(3)
     print(f"{Fore.YELLOW}Мисълта ти е ясна – трябва да избягаш.")
     room1()
+
 situation_01()
